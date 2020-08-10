@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi.services;
 
+
 public class PrimaryGreetingService implements GreetingService{
     private GreetingRepository greetingRepository;
 
@@ -9,6 +10,6 @@ public class PrimaryGreetingService implements GreetingService{
 
     @Override
     public String sayGreeting() {
-        return null;
+        return greetingRepository.getEnglishGreeting();
     }
 }
