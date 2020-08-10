@@ -15,10 +15,6 @@ public class SfgDiApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController");
 
-		System.out.println("-------I18nService");
-		I18nController i18nController = (I18nController)ctx.getBean("i18nController") ;
-		System.out.println(i18nController.sayHello());
-
 		System.out.println("------- Primary");
 
 		System.out.println(myController.sayHello());
